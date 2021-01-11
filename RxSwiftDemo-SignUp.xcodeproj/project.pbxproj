@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C06CDD425A36BDD00A3D134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06CDD325A36BDD00A3D134 /* AppDelegate.swift */; };
+		2C06CDD625A36BDE00A3D134 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06CDD525A36BDE00A3D134 /* SceneDelegate.swift */; };
+		2C06CDD825A36BDE00A3D134 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06CDD725A36BDE00A3D134 /* ViewController.swift */; };
+		2C06CDDB25A36BDE00A3D134 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C06CDD925A36BDE00A3D134 /* Main.storyboard */; };
+		2C06CDDD25A36BDF00A3D134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C06CDDC25A36BDF00A3D134 /* Assets.xcassets */; };
+		2C06CDE025A36BDF00A3D134 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C06CDDE25A36BDF00A3D134 /* LaunchScreen.storyboard */; };
+		2C06CDEB25A36BDF00A3D134 /* RxSwiftDemo_SignUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06CDEA25A36BDF00A3D134 /* RxSwiftDemo_SignUpTests.swift */; };
+		2C06CDF625A36BDF00A3D134 /* RxSwiftDemo_SignUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06CDF525A36BDF00A3D134 /* RxSwiftDemo_SignUpUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C06CDE725A36BDF00A3D134 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C06CDC825A36BDD00A3D134 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C06CDCF25A36BDD00A3D134;
+			remoteInfo = "RxSwiftDemo-SignUp";
+		};
+		2C06CDF225A36BDF00A3D134 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C06CDC825A36BDD00A3D134 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C06CDCF25A36BDD00A3D134;
+			remoteInfo = "RxSwiftDemo-SignUp";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C06CDD025A36BDD00A3D134 /* RxSwiftDemo-SignUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RxSwiftDemo-SignUp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C06CDD325A36BDD00A3D134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2C06CDD525A36BDE00A3D134 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2C06CDD725A36BDE00A3D134 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2C06CDDA25A36BDE00A3D134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2C06CDDC25A36BDF00A3D134 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C06CDDF25A36BDF00A3D134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2C06CDE125A36BDF00A3D134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C06CDE625A36BDF00A3D134 /* RxSwiftDemo-SignUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxSwiftDemo-SignUpTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C06CDEA25A36BDF00A3D134 /* RxSwiftDemo_SignUpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftDemo_SignUpTests.swift; sourceTree = "<group>"; };
+		2C06CDEC25A36BDF00A3D134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C06CDF125A36BDF00A3D134 /* RxSwiftDemo-SignUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxSwiftDemo-SignUpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C06CDF525A36BDF00A3D134 /* RxSwiftDemo_SignUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftDemo_SignUpUITests.swift; sourceTree = "<group>"; };
+		2C06CDF725A36BDF00A3D134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C06CDCD25A36BDD00A3D134 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C06CDE325A36BDF00A3D134 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C06CDEE25A36BDF00A3D134 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C06CDC725A36BDD00A3D134 = {
+			isa = PBXGroup;
+			children = (
+				2C06CDD225A36BDD00A3D134 /* RxSwiftDemo-SignUp */,
+				2C06CDE925A36BDF00A3D134 /* RxSwiftDemo-SignUpTests */,
+				2C06CDF425A36BDF00A3D134 /* RxSwiftDemo-SignUpUITests */,
+				2C06CDD125A36BDD00A3D134 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C06CDD125A36BDD00A3D134 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C06CDD025A36BDD00A3D134 /* RxSwiftDemo-SignUp.app */,
+				2C06CDE625A36BDF00A3D134 /* RxSwiftDemo-SignUpTests.xctest */,
+				2C06CDF125A36BDF00A3D134 /* RxSwiftDemo-SignUpUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C06CDD225A36BDD00A3D134 /* RxSwiftDemo-SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				2C06CDD325A36BDD00A3D134 /* AppDelegate.swift */,
+				2C06CDD525A36BDE00A3D134 /* SceneDelegate.swift */,
+				2C06CDD725A36BDE00A3D134 /* ViewController.swift */,
+				2C06CDD925A36BDE00A3D134 /* Main.storyboard */,
+				2C06CDDC25A36BDF00A3D134 /* Assets.xcassets */,
+				2C06CDDE25A36BDF00A3D134 /* LaunchScreen.storyboard */,
+				2C06CDE125A36BDF00A3D134 /* Info.plist */,
+			);
+			path = "RxSwiftDemo-SignUp";
+			sourceTree = "<group>";
+		};
+		2C06CDE925A36BDF00A3D134 /* RxSwiftDemo-SignUpTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C06CDEA25A36BDF00A3D134 /* RxSwiftDemo_SignUpTests.swift */,
+				2C06CDEC25A36BDF00A3D134 /* Info.plist */,
+			);
+			path = "RxSwiftDemo-SignUpTests";
+			sourceTree = "<group>";
+		};
+		2C06CDF425A36BDF00A3D134 /* RxSwiftDemo-SignUpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C06CDF525A36BDF00A3D134 /* RxSwiftDemo_SignUpUITests.swift */,
+				2C06CDF725A36BDF00A3D134 /* Info.plist */,
+			);
+			path = "RxSwiftDemo-SignUpUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C06CDCF25A36BDD00A3D134 /* RxSwiftDemo-SignUp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C06CDFA25A36BDF00A3D134 /* Build configuration list for PBXNativeTarget "RxSwiftDemo-SignUp" */;
+			buildPhases = (
+				2C06CDCC25A36BDD00A3D134 /* Sources */,
+				2C06CDCD25A36BDD00A3D134 /* Frameworks */,
+				2C06CDCE25A36BDD00A3D134 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RxSwiftDemo-SignUp";
+			productName = "RxSwiftDemo-SignUp";
+			productReference = 2C06CDD025A36BDD00A3D134 /* RxSwiftDemo-SignUp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C06CDE525A36BDF00A3D134 /* RxSwiftDemo-SignUpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C06CDFD25A36BDF00A3D134 /* Build configuration list for PBXNativeTarget "RxSwiftDemo-SignUpTests" */;
+			buildPhases = (
+				2C06CDE225A36BDF00A3D134 /* Sources */,
+				2C06CDE325A36BDF00A3D134 /* Frameworks */,
+				2C06CDE425A36BDF00A3D134 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C06CDE825A36BDF00A3D134 /* PBXTargetDependency */,
+			);
+			name = "RxSwiftDemo-SignUpTests";
+			productName = "RxSwiftDemo-SignUpTests";
+			productReference = 2C06CDE625A36BDF00A3D134 /* RxSwiftDemo-SignUpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C06CDF025A36BDF00A3D134 /* RxSwiftDemo-SignUpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C06CE0025A36BDF00A3D134 /* Build configuration list for PBXNativeTarget "RxSwiftDemo-SignUpUITests" */;
+			buildPhases = (
+				2C06CDED25A36BDF00A3D134 /* Sources */,
+				2C06CDEE25A36BDF00A3D134 /* Frameworks */,
+				2C06CDEF25A36BDF00A3D134 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C06CDF325A36BDF00A3D134 /* PBXTargetDependency */,
+			);
+			name = "RxSwiftDemo-SignUpUITests";
+			productName = "RxSwiftDemo-SignUpUITests";
+			productReference = 2C06CDF125A36BDF00A3D134 /* RxSwiftDemo-SignUpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C06CDC825A36BDD00A3D134 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					2C06CDCF25A36BDD00A3D134 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					2C06CDE525A36BDF00A3D134 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 2C06CDCF25A36BDD00A3D134;
+					};
+					2C06CDF025A36BDF00A3D134 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 2C06CDCF25A36BDD00A3D134;
+					};
+				};
+			};
+			buildConfigurationList = 2C06CDCB25A36BDD00A3D134 /* Build configuration list for PBXProject "RxSwiftDemo-SignUp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C06CDC725A36BDD00A3D134;
+			productRefGroup = 2C06CDD125A36BDD00A3D134 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C06CDCF25A36BDD00A3D134 /* RxSwiftDemo-SignUp */,
+				2C06CDE525A36BDF00A3D134 /* RxSwiftDemo-SignUpTests */,
+				2C06CDF025A36BDF00A3D134 /* RxSwiftDemo-SignUpUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C06CDCE25A36BDD00A3D134 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C06CDE025A36BDF00A3D134 /* LaunchScreen.storyboard in Resources */,
+				2C06CDDD25A36BDF00A3D134 /* Assets.xcassets in Resources */,
+				2C06CDDB25A36BDE00A3D134 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C06CDE425A36BDF00A3D134 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C06CDEF25A36BDF00A3D134 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C06CDCC25A36BDD00A3D134 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C06CDD825A36BDE00A3D134 /* ViewController.swift in Sources */,
+				2C06CDD425A36BDD00A3D134 /* AppDelegate.swift in Sources */,
+				2C06CDD625A36BDE00A3D134 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C06CDE225A36BDF00A3D134 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C06CDEB25A36BDF00A3D134 /* RxSwiftDemo_SignUpTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C06CDED25A36BDF00A3D134 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C06CDF625A36BDF00A3D134 /* RxSwiftDemo_SignUpUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C06CDE825A36BDF00A3D134 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C06CDCF25A36BDD00A3D134 /* RxSwiftDemo-SignUp */;
+			targetProxy = 2C06CDE725A36BDF00A3D134 /* PBXContainerItemProxy */;
+		};
+		2C06CDF325A36BDF00A3D134 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C06CDCF25A36BDD00A3D134 /* RxSwiftDemo-SignUp */;
+			targetProxy = 2C06CDF225A36BDF00A3D134 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2C06CDD925A36BDE00A3D134 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C06CDDA25A36BDE00A3D134 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2C06CDDE25A36BDF00A3D134 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C06CDDF25A36BDF00A3D134 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2C06CDF825A36BDF00A3D134 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C06CDF925A36BDF00A3D134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C06CDFB25A36BDF00A3D134 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UG6S92QCHF;
+				INFOPLIST_FILE = "RxSwiftDemo-SignUp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ithree1113.RxSwiftDemo-SignUp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C06CDFC25A36BDF00A3D134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UG6S92QCHF;
+				INFOPLIST_FILE = "RxSwiftDemo-SignUp/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ithree1113.RxSwiftDemo-SignUp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2C06CDFE25A36BDF00A3D134 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UG6S92QCHF;
+				INFOPLIST_FILE = "RxSwiftDemo-SignUpTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ithree1113.RxSwiftDemo-SignUpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxSwiftDemo-SignUp.app/RxSwiftDemo-SignUp";
+			};
+			name = Debug;
+		};
+		2C06CDFF25A36BDF00A3D134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UG6S92QCHF;
+				INFOPLIST_FILE = "RxSwiftDemo-SignUpTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ithree1113.RxSwiftDemo-SignUpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RxSwiftDemo-SignUp.app/RxSwiftDemo-SignUp";
+			};
+			name = Release;
+		};
+		2C06CE0125A36BDF00A3D134 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UG6S92QCHF;
+				INFOPLIST_FILE = "RxSwiftDemo-SignUpUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ithree1113.RxSwiftDemo-SignUpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RxSwiftDemo-SignUp";
+			};
+			name = Debug;
+		};
+		2C06CE0225A36BDF00A3D134 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UG6S92QCHF;
+				INFOPLIST_FILE = "RxSwiftDemo-SignUpUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ithree1113.RxSwiftDemo-SignUpUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RxSwiftDemo-SignUp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C06CDCB25A36BDD00A3D134 /* Build configuration list for PBXProject "RxSwiftDemo-SignUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C06CDF825A36BDF00A3D134 /* Debug */,
+				2C06CDF925A36BDF00A3D134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C06CDFA25A36BDF00A3D134 /* Build configuration list for PBXNativeTarget "RxSwiftDemo-SignUp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C06CDFB25A36BDF00A3D134 /* Debug */,
+				2C06CDFC25A36BDF00A3D134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C06CDFD25A36BDF00A3D134 /* Build configuration list for PBXNativeTarget "RxSwiftDemo-SignUpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C06CDFE25A36BDF00A3D134 /* Debug */,
+				2C06CDFF25A36BDF00A3D134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C06CE0025A36BDF00A3D134 /* Build configuration list for PBXNativeTarget "RxSwiftDemo-SignUpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C06CE0125A36BDF00A3D134 /* Debug */,
+				2C06CE0225A36BDF00A3D134 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C06CDC825A36BDD00A3D134 /* Project object */;
+}
