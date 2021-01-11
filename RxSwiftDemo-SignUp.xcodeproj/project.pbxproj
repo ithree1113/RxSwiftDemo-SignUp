@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		2C06CDE025A36BDF00A3D134 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C06CDDE25A36BDF00A3D134 /* LaunchScreen.storyboard */; };
 		2C06CDEB25A36BDF00A3D134 /* RxSwiftDemo_SignUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06CDEA25A36BDF00A3D134 /* RxSwiftDemo_SignUpTests.swift */; };
 		2C06CDF625A36BDF00A3D134 /* RxSwiftDemo_SignUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06CDF525A36BDF00A3D134 /* RxSwiftDemo_SignUpUITests.swift */; };
+		2C06CE1A25AC56A000A3D134 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 2C06CE1925AC56A000A3D134 /* Moya */; };
+		2C06CE1C25AC56A000A3D134 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 2C06CE1B25AC56A000A3D134 /* RxMoya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C06CE1C25AC56A000A3D134 /* RxMoya in Frameworks */,
+				2C06CE1A25AC56A000A3D134 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +148,10 @@
 			dependencies = (
 			);
 			name = "RxSwiftDemo-SignUp";
+			packageProductDependencies = (
+				2C06CE1925AC56A000A3D134 /* Moya */,
+				2C06CE1B25AC56A000A3D134 /* RxMoya */,
+			);
 			productName = "RxSwiftDemo-SignUp";
 			productReference = 2C06CDD025A36BDD00A3D134 /* RxSwiftDemo-SignUp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 2C06CDC725A36BDD00A3D134;
+			packageReferences = (
+				2C06CE1825AC56A000A3D134 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = 2C06CDD125A36BDD00A3D134 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -593,6 +604,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C06CE1825AC56A000A3D134 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C06CE1925AC56A000A3D134 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C06CE1825AC56A000A3D134 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		2C06CE1B25AC56A000A3D134 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C06CE1825AC56A000A3D134 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2C06CDC825A36BDD00A3D134 /* Project object */;
 }
