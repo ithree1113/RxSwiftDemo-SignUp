@@ -17,6 +17,7 @@
 		2C06CDF625A36BDF00A3D134 /* RxSwiftDemo_SignUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06CDF525A36BDF00A3D134 /* RxSwiftDemo_SignUpUITests.swift */; };
 		2C06CE1A25AC56A000A3D134 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 2C06CE1925AC56A000A3D134 /* Moya */; };
 		2C06CE1C25AC56A000A3D134 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 2C06CE1B25AC56A000A3D134 /* RxMoya */; };
+		2C06CE3525AE057300A3D134 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06CE3425AE057300A3D134 /* Router.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		2C06CDF125A36BDF00A3D134 /* RxSwiftDemo-SignUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxSwiftDemo-SignUpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C06CDF525A36BDF00A3D134 /* RxSwiftDemo_SignUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftDemo_SignUpUITests.swift; sourceTree = "<group>"; };
 		2C06CDF725A36BDF00A3D134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C06CE3425AE057300A3D134 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		2C06CDD225A36BDD00A3D134 /* RxSwiftDemo-SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				2C06CE3325AE055700A3D134 /* Protocol */,
 				2C06CDD325A36BDD00A3D134 /* AppDelegate.swift */,
 				2C06CDD525A36BDE00A3D134 /* SceneDelegate.swift */,
 				2C06CDD725A36BDE00A3D134 /* ViewController.swift */,
@@ -130,6 +133,14 @@
 				2C06CDF725A36BDF00A3D134 /* Info.plist */,
 			);
 			path = "RxSwiftDemo-SignUpUITests";
+			sourceTree = "<group>";
+		};
+		2C06CE3325AE055700A3D134 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				2C06CE3425AE057300A3D134 /* Router.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +282,7 @@
 			files = (
 				2C06CDD825A36BDE00A3D134 /* ViewController.swift in Sources */,
 				2C06CDD425A36BDD00A3D134 /* AppDelegate.swift in Sources */,
+				2C06CE3525AE057300A3D134 /* Router.swift in Sources */,
 				2C06CDD625A36BDE00A3D134 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
