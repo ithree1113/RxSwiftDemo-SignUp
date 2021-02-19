@@ -22,6 +22,7 @@
 		7C7EBBBD25DF562A00CAA2CA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7EBBBC25DF562A00CAA2CA /* Coordinator.swift */; };
 		7C7EBBCC25DF71AE00CAA2CA /* GlobalMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7EBBCB25DF71AE00CAA2CA /* GlobalMethod.swift */; };
 		7C7EBBD125DF72E100CAA2CA /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7EBBD025DF72E100CAA2CA /* NavigationRouter.swift */; };
+		7C7EBBEF25DFA63200CAA2CA /* UINavigationController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7EBBEE25DFA63200CAA2CA /* UINavigationController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		7C7EBBBC25DF562A00CAA2CA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		7C7EBBCB25DF71AE00CAA2CA /* GlobalMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalMethod.swift; sourceTree = "<group>"; };
 		7C7EBBD025DF72E100CAA2CA /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
+		7C7EBBEE25DFA63200CAA2CA /* UINavigationController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		2C06CDD225A36BDD00A3D134 /* RxSwiftDemo-SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				7C7EBBED25DFA62300CAA2CA /* Extension */,
 				7C7EBBB525DF52B200CAA2CA /* Router */,
 				2C06CE2225AC596000A3D134 /* Coordinator */,
 				2C06CE3325AE055700A3D134 /* Protocol */,
@@ -169,6 +172,14 @@
 				7C7EBBD025DF72E100CAA2CA /* NavigationRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		7C7EBBED25DFA62300CAA2CA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7C7EBBEE25DFA63200CAA2CA /* UINavigationController+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +321,7 @@
 			files = (
 				2C06CDD825A36BDE00A3D134 /* ViewController.swift in Sources */,
 				2C06CDD425A36BDD00A3D134 /* AppDelegate.swift in Sources */,
+				7C7EBBEF25DFA63200CAA2CA /* UINavigationController+Extension.swift in Sources */,
 				7C7EBBBD25DF562A00CAA2CA /* Coordinator.swift in Sources */,
 				2C06CE3525AE057300A3D134 /* Router.swift in Sources */,
 				2C06CDD625A36BDE00A3D134 /* SceneDelegate.swift in Sources */,
