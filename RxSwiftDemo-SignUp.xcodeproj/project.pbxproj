@@ -19,6 +19,7 @@
 		2C06CE1C25AC56A000A3D134 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 2C06CE1B25AC56A000A3D134 /* RxMoya */; };
 		2C06CE2F25AE052200A3D134 /* AppDelegateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06CE2E25AE052200A3D134 /* AppDelegateRouter.swift */; };
 		2C06CE3525AE057300A3D134 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06CE3425AE057300A3D134 /* Router.swift */; };
+		7C7EBBBD25DF562A00CAA2CA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7EBBBC25DF562A00CAA2CA /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		2C06CDF725A36BDF00A3D134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C06CE2E25AE052200A3D134 /* AppDelegateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateRouter.swift; sourceTree = "<group>"; };
 		2C06CE3425AE057300A3D134 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		7C7EBBBC25DF562A00CAA2CA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				2C06CE3425AE057300A3D134 /* Router.swift */,
+				7C7EBBBC25DF562A00CAA2CA /* Coordinator.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			files = (
 				2C06CDD825A36BDE00A3D134 /* ViewController.swift in Sources */,
 				2C06CDD425A36BDD00A3D134 /* AppDelegate.swift in Sources */,
+				7C7EBBBD25DF562A00CAA2CA /* Coordinator.swift in Sources */,
 				2C06CE3525AE057300A3D134 /* Router.swift in Sources */,
 				2C06CDD625A36BDE00A3D134 /* SceneDelegate.swift in Sources */,
 				2C06CE2F25AE052200A3D134 /* AppDelegateRouter.swift in Sources */,
