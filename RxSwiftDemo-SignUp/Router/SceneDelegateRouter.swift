@@ -1,5 +1,5 @@
 //
-//  AppDelegateRouter.swift
+//  SceneDelegateRouter.swift
 //  RxSwiftDemo-SignUp
 //
 //  Created by EddieCheng on 2021/1/13.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class AppDelegateRouter: Router {
+class SceneDelegateRouter: Router {
     
     private let window: UIWindow
     

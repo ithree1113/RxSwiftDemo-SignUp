@@ -17,7 +17,7 @@
 		2C06CDF625A36BDF00A3D134 /* RxSwiftDemo_SignUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06CDF525A36BDF00A3D134 /* RxSwiftDemo_SignUpUITests.swift */; };
 		2C06CE1A25AC56A000A3D134 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 2C06CE1925AC56A000A3D134 /* Moya */; };
 		2C06CE1C25AC56A000A3D134 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 2C06CE1B25AC56A000A3D134 /* RxMoya */; };
-		2C06CE2F25AE052200A3D134 /* AppDelegateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06CE2E25AE052200A3D134 /* AppDelegateRouter.swift */; };
+		2C06CE2F25AE052200A3D134 /* SceneDelegateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06CE2E25AE052200A3D134 /* SceneDelegateRouter.swift */; };
 		2C06CE3525AE057300A3D134 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06CE3425AE057300A3D134 /* Router.swift */; };
 		7C7EBBBD25DF562A00CAA2CA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7EBBBC25DF562A00CAA2CA /* Coordinator.swift */; };
 		7C7EBBCC25DF71AE00CAA2CA /* GlobalMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7EBBCB25DF71AE00CAA2CA /* GlobalMethod.swift */; };
@@ -56,7 +56,7 @@
 		2C06CDF125A36BDF00A3D134 /* RxSwiftDemo-SignUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RxSwiftDemo-SignUpUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C06CDF525A36BDF00A3D134 /* RxSwiftDemo_SignUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftDemo_SignUpUITests.swift; sourceTree = "<group>"; };
 		2C06CDF725A36BDF00A3D134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2C06CE2E25AE052200A3D134 /* AppDelegateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateRouter.swift; sourceTree = "<group>"; };
+		2C06CE2E25AE052200A3D134 /* SceneDelegateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateRouter.swift; sourceTree = "<group>"; };
 		2C06CE3425AE057300A3D134 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		7C7EBBBC25DF562A00CAA2CA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		7C7EBBCB25DF71AE00CAA2CA /* GlobalMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalMethod.swift; sourceTree = "<group>"; };
@@ -165,7 +165,7 @@
 		7C7EBBB525DF52B200CAA2CA /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				2C06CE2E25AE052200A3D134 /* AppDelegateRouter.swift */,
+				2C06CE2E25AE052200A3D134 /* SceneDelegateRouter.swift */,
 				7C7EBBD025DF72E100CAA2CA /* NavigationRouter.swift */,
 			);
 			path = Router;
@@ -314,7 +314,7 @@
 				2C06CE3525AE057300A3D134 /* Router.swift in Sources */,
 				2C06CDD625A36BDE00A3D134 /* SceneDelegate.swift in Sources */,
 				7C7EBBCC25DF71AE00CAA2CA /* GlobalMethod.swift in Sources */,
-				2C06CE2F25AE052200A3D134 /* AppDelegateRouter.swift in Sources */,
+				2C06CE2F25AE052200A3D134 /* SceneDelegateRouter.swift in Sources */,
 				7C7EBBD125DF72E100CAA2CA /* NavigationRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
