@@ -107,6 +107,7 @@
 		2C06CDD225A36BDD00A3D134 /* RxSwiftDemo-SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				7C7EBBB525DF52B200CAA2CA /* Router */,
 				2C06CE2225AC596000A3D134 /* Coordinator */,
 				2C06CE3325AE055700A3D134 /* Protocol */,
 				2C06CDD325A36BDD00A3D134 /* AppDelegate.swift */,
@@ -141,7 +142,6 @@
 		2C06CE2225AC596000A3D134 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				2C06CE2E25AE052200A3D134 /* AppDelegateRouter.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -152,6 +152,14 @@
 				2C06CE3425AE057300A3D134 /* Router.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		7C7EBBB525DF52B200CAA2CA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2C06CE2E25AE052200A3D134 /* AppDelegateRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
