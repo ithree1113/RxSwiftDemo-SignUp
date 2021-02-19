@@ -21,7 +21,7 @@ extension Coordinator {
         router.dismiss(animated: animated)
     }
     
-    func presentChild(_ child: Coordinator, animated: Bool, onDismissed: (() -> Void)?) {
+    func presentChild(_ child: Coordinator, animated: Bool, onDismissed: (() -> Void)? = nil) {
         children.append(child)
         child.present(
             animated: animated,
