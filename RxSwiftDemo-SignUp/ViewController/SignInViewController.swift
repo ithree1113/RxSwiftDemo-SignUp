@@ -20,7 +20,7 @@ class SignInViewController: UIViewController {
     //MARK: - Private
     private let accountLabel: UILabel = {
         let al = UILabel()
-        al.text = "Account"
+        al.text = "Account(3-64)"
         al.font = UIFont.systemFont(ofSize: 16)
         return al
     }()
@@ -32,7 +32,7 @@ class SignInViewController: UIViewController {
     }()
     private let passwordLabel: UILabel = {
         let pl = UILabel()
-        pl.text = "Password"
+        pl.text = "Password(4-20)"
         pl.font = UIFont.systemFont(ofSize: 16)
         return pl
     }()
