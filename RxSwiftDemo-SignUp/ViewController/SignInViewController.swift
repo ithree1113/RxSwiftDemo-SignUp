@@ -10,7 +10,7 @@ import RxSwift
 import RxCocoa
 
 protocol SignInVCDelegate: class {
-    
+    var signUpBtnTapped: PublishRelay<Void> { get }
 }
 
 class SignInViewController: UIViewController {
@@ -59,6 +59,8 @@ class SignInViewController: UIViewController {
         return sub
     }()
     
+    private let disposeBag = DisposeBag()
+    
     //MARK: - Lifecycle
     init(delegate: SignInVCDelegate? = nil) {
         self.coordinator = delegate
@@ -78,6 +80,19 @@ class SignInViewController: UIViewController {
         view.backgroundColor = .white
         
         layoutView()
+        setupBinding()
+    }
+}
+
+//MARK: - Binding
+private extension SignInViewController {
+    func setupBinding() {
+        
+        if let coordinator = coordinator {
+            signUpBtn.rx.tap
+                .bind(to: coordinator.signUpBtnTapped)
+                .disposed(by: disposeBag)
+        }
     }
 }
 

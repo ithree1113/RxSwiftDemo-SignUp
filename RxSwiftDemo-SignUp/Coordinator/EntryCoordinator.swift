@@ -15,6 +15,9 @@ class EntryCoordinator: Coordinator {
     let router: Router
     
     private var onDismissed: (() -> Void)?
+    private let disposeBag = DisposeBag()
+    
+    private var signUpBtnTappedKey = "signUpBtnTapped"
     
     init(router: Router) {
         self.router = router
@@ -34,5 +37,23 @@ class EntryCoordinator: Coordinator {
 }
 
 extension EntryCoordinator: SignInVCDelegate {
+    var signUpBtnTapped: PublishRelay<Void> {
+        if let signUpBtnTapped = objc_getAssociatedObject(self, &signUpBtnTappedKey) as? PublishRelay<Void> {
+            return signUpBtnTapped
+        }
+        let signUpBtnTapped = PublishRelay<Void>()
+        
+        signUpBtnTapped.subscribe(onNext: { [unowned self] in
+            let signUpVC = SignUpViewController(delegate: self)
+            router.present(signUpVC, animated: true)
+        }).disposed(by: disposeBag)
+        
+        objc_setAssociatedObject(self, &signUpBtnTappedKey, signUpBtnTapped, .OBJC_ASSOCIATION_RETAIN)
+        
+        return signUpBtnTapped
+    }
+}
+
+extension EntryCoordinator: SignUpVCDelegate {
     
 }
