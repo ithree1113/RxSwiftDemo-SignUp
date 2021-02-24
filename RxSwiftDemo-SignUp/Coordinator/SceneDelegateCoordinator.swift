@@ -22,11 +22,16 @@ class SceneDelegateCoordinator: Coordinator {
     
     //MARK: - Method
     func present(animated: Bool, onDismissed: (() -> Void)?) {
-        let vc = UIViewController(nibName: nil, bundle: nil)
-        vc.view.backgroundColor = .blue
-        
-        let navigationController = UINavigationController(rootViewController: vc)
+        let signInVC = SignInViewController()
+        let navigationController = UINavigationController(rootViewController: signInVC)
         navigationController.setTransparentStyle()
         router.present(navigationController, animated: false)
+        
+        let navRouter = NavigationRouter(navigationController: navigationController)
+        let entryCoordinator = EntryCoordinator(router: navRouter)
+        signInVC.coordinator = entryCoordinator
+        presentChild(entryCoordinator, animated: false) {
+            
+        }
     }
 }
