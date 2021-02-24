@@ -30,7 +30,7 @@ extension UIColor {
 extension UIColor {
     struct FlatColor {
         struct Green {
-
+            static let usuaoGreen = UIColor(rgb: 0x91B493)
         }
         
         struct Blue {
