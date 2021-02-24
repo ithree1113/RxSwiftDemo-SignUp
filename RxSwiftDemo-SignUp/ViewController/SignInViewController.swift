@@ -45,6 +45,7 @@ class SignInViewController: UIViewController {
     private let signInBtn: MainButton = {
         let sib = MainButton()
         sib.setTitle("Sign In", for: .normal)
+        sib.isValid.accept(false)
         return sib
     }()
     private let seperateLine: UIView = {
