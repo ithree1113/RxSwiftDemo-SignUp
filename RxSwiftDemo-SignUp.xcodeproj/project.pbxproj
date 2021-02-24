@@ -18,6 +18,7 @@
 		2C06CE2F25AE052200A3D134 /* SceneDelegateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06CE2E25AE052200A3D134 /* SceneDelegateRouter.swift */; };
 		2C06CE3525AE057300A3D134 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C06CE3425AE057300A3D134 /* Router.swift */; };
 		31FE36F0EAE6F97DC577029F /* Pods_RxSwiftDemo_SignUp_RxSwiftDemo_SignUpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE3B78FF785401362C82C4A /* Pods_RxSwiftDemo_SignUp_RxSwiftDemo_SignUpUITests.framework */; };
+		7C46CDB625E63FA600BB8060 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7C46CDB525E63FA600BB8060 /* SnapKit */; };
 		7C79396325DFBF5000DAF581 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C79396225DFBF5000DAF581 /* UIColor+Extension.swift */; };
 		7C7EBBBD25DF562A00CAA2CA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7EBBBC25DF562A00CAA2CA /* Coordinator.swift */; };
 		7C7EBBC725DF703C00CAA2CA /* SceneDelegateCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7EBBC625DF703C00CAA2CA /* SceneDelegateCoordinator.swift */; };
@@ -87,6 +88,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C4A964F03948567C08D934C /* Pods_RxSwiftDemo_SignUp.framework in Frameworks */,
+				7C46CDB625E63FA600BB8060 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +255,9 @@
 			dependencies = (
 			);
 			name = "RxSwiftDemo-SignUp";
+			packageProductDependencies = (
+				7C46CDB525E63FA600BB8060 /* SnapKit */,
+			);
 			productName = "RxSwiftDemo-SignUp";
 			productReference = 2C06CDD025A36BDD00A3D134 /* RxSwiftDemo-SignUp.app */;
 			productType = "com.apple.product-type.application";
@@ -327,6 +332,9 @@
 				Base,
 			);
 			mainGroup = 2C06CDC725A36BDD00A3D134;
+			packageReferences = (
+				7C46CDB425E63FA600BB8060 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 2C06CDD125A36BDD00A3D134 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -825,6 +833,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7C46CDB425E63FA600BB8060 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7C46CDB525E63FA600BB8060 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7C46CDB425E63FA600BB8060 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2C06CDC825A36BDD00A3D134 /* Project object */;
 }
