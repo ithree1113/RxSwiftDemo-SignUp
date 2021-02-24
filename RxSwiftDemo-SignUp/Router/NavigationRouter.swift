@@ -18,6 +18,10 @@ class NavigationRouter: NSObject {
         super.init()
         navigationController.delegate = self
     }
+    
+    deinit {
+        printLog(message: "")
+    }
 }
 
 extension NavigationRouter: Router {
