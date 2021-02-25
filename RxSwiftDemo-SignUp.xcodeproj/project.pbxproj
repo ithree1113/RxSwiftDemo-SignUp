@@ -23,6 +23,11 @@
 		7C46CDB625E63FA600BB8060 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7C46CDB525E63FA600BB8060 /* SnapKit */; };
 		7C46CDD125E64B7C00BB8060 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C46CDD025E64B7C00BB8060 /* SignUpViewController.swift */; };
 		7C46CDD725E658BE00BB8060 /* TextValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C46CDD625E658BE00BB8060 /* TextValidator.swift */; };
+		7C46CDEC25E77D2900BB8060 /* DecodableResponseTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C46CDEB25E77D2900BB8060 /* DecodableResponseTargetType.swift */; };
+		7C46CDF125E77E2300BB8060 /* AccountAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C46CDF025E77E2300BB8060 /* AccountAPI.swift */; };
+		7C46CDF725E77FD600BB8060 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C46CDF625E77FD600BB8060 /* ResponseModel.swift */; };
+		7C46CDFC25E781E900BB8060 /* SignInRespModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C46CDFB25E781E900BB8060 /* SignInRespModel.swift */; };
+		7C46CE0125E7837A00BB8060 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C46CE0025E7837A00BB8060 /* APIClient.swift */; };
 		7C79396325DFBF5000DAF581 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C79396225DFBF5000DAF581 /* UIColor+Extension.swift */; };
 		7C7EBBBD25DF562A00CAA2CA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7EBBBC25DF562A00CAA2CA /* Coordinator.swift */; };
 		7C7EBBC725DF703C00CAA2CA /* SceneDelegateCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7EBBC625DF703C00CAA2CA /* SceneDelegateCoordinator.swift */; };
@@ -73,6 +78,11 @@
 		7C46CDAB25E62C8300BB8060 /* EntryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCoordinator.swift; sourceTree = "<group>"; };
 		7C46CDD025E64B7C00BB8060 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7C46CDD625E658BE00BB8060 /* TextValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextValidator.swift; sourceTree = "<group>"; };
+		7C46CDEB25E77D2900BB8060 /* DecodableResponseTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableResponseTargetType.swift; sourceTree = "<group>"; };
+		7C46CDF025E77E2300BB8060 /* AccountAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAPI.swift; sourceTree = "<group>"; };
+		7C46CDF625E77FD600BB8060 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		7C46CDFB25E781E900BB8060 /* SignInRespModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRespModel.swift; sourceTree = "<group>"; };
+		7C46CE0025E7837A00BB8060 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		7C79396225DFBF5000DAF581 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		7C7EBBBC25DF562A00CAA2CA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		7C7EBBC625DF703C00CAA2CA /* SceneDelegateCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateCoordinator.swift; sourceTree = "<group>"; };
@@ -144,10 +154,12 @@
 		2C06CDD225A36BDD00A3D134 /* RxSwiftDemo-SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				7C46CDF525E77FB900BB8060 /* Model */,
 				7C46CDA225E6277A00BB8060 /* ViewController */,
 				7C7EBBFC25DFB0EA00CAA2CA /* View */,
 				7C7EBBB525DF52B200CAA2CA /* Router */,
 				2C06CE2225AC596000A3D134 /* Coordinator */,
+				7C46CDEA25E77CEE00BB8060 /* Network */,
 				2C06CE3325AE055700A3D134 /* Protocol */,
 				7C7EBBED25DFA62300CAA2CA /* Extension */,
 				7C46CDD525E6588400BB8060 /* Helper */,
@@ -195,6 +207,7 @@
 			children = (
 				2C06CE3425AE057300A3D134 /* Router.swift */,
 				7C7EBBBC25DF562A00CAA2CA /* Coordinator.swift */,
+				7C46CDEB25E77D2900BB8060 /* DecodableResponseTargetType.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -227,6 +240,24 @@
 				7C46CDD625E658BE00BB8060 /* TextValidator.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		7C46CDEA25E77CEE00BB8060 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7C46CE0025E7837A00BB8060 /* APIClient.swift */,
+				7C46CDF025E77E2300BB8060 /* AccountAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7C46CDF525E77FB900BB8060 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7C46CDF625E77FD600BB8060 /* ResponseModel.swift */,
+				7C46CDFB25E781E900BB8060 /* SignInRespModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		7C7EBBB525DF52B200CAA2CA /* Router */ = {
@@ -512,19 +543,24 @@
 				7C46CDA425E627AE00BB8060 /* SignInViewController.swift in Sources */,
 				2C06CDD825A36BDE00A3D134 /* ViewController.swift in Sources */,
 				7C46CDAC25E62C8400BB8060 /* EntryCoordinator.swift in Sources */,
+				7C46CDFC25E781E900BB8060 /* SignInRespModel.swift in Sources */,
 				2C06CDD425A36BDD00A3D134 /* AppDelegate.swift in Sources */,
 				7C7EBBEF25DFA63200CAA2CA /* UINavigationController+Extension.swift in Sources */,
 				7C7EBBBD25DF562A00CAA2CA /* Coordinator.swift in Sources */,
 				2C06CE3525AE057300A3D134 /* Router.swift in Sources */,
+				7C46CE0125E7837A00BB8060 /* APIClient.swift in Sources */,
 				2C06CDD625A36BDE00A3D134 /* SceneDelegate.swift in Sources */,
 				7C7EBBCC25DF71AE00CAA2CA /* GlobalMethod.swift in Sources */,
 				7C46CDD725E658BE00BB8060 /* TextValidator.swift in Sources */,
 				7C46CDD125E64B7C00BB8060 /* SignUpViewController.swift in Sources */,
 				7C7EBBFE25DFB10E00CAA2CA /* MainButton.swift in Sources */,
+				7C46CDF125E77E2300BB8060 /* AccountAPI.swift in Sources */,
 				2C06CE2F25AE052200A3D134 /* SceneDelegateRouter.swift in Sources */,
 				7C79396325DFBF5000DAF581 /* UIColor+Extension.swift in Sources */,
+				7C46CDEC25E77D2900BB8060 /* DecodableResponseTargetType.swift in Sources */,
 				7C7EBBD125DF72E100CAA2CA /* NavigationRouter.swift in Sources */,
 				7C7EBBC725DF703C00CAA2CA /* SceneDelegateCoordinator.swift in Sources */,
+				7C46CDF725E77FD600BB8060 /* ResponseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
