@@ -17,7 +17,7 @@ class EntryCoordinator: Coordinator {
     private var onDismissed: (() -> Void)?
     private let disposeBag = DisposeBag()
     
-    private var signUpBtnTappedKey = "signUpBtnTapped"
+    private var signUpBtnTappedKey: Void?
     
     init(router: Router) {
         self.router = router
