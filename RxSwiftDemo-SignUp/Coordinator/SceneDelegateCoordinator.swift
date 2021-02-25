@@ -22,7 +22,8 @@ class SceneDelegateCoordinator: Coordinator {
     
     //MARK: - Method
     func present(animated: Bool, onDismissed: (() -> Void)?) {
-        let signInVC = SignInViewController()
+        let viewModel = SignInViewModel(apiClient: StubAPIClient.shared)
+        let signInVC = SignInViewController(viewModel: viewModel)
         let navigationController = UINavigationController(rootViewController: signInVC)
         navigationController.setTransparentStyle()
         router.present(navigationController, animated: false)

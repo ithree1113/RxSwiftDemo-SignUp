@@ -61,10 +61,12 @@ class SignInViewController: UIViewController {
         return sub
     }()
     
+    private let viewModel: SignInViewModelType
     private let disposeBag = DisposeBag()
     
     //MARK: - Lifecycle
-    init(delegate: SignInVCDelegate? = nil) {
+    init(viewModel: SignInViewModelType, delegate: SignInVCDelegate? = nil) {
+        self.viewModel = viewModel
         self.coordinator = delegate
         super.init(nibName: nil, bundle: nil)
     }
