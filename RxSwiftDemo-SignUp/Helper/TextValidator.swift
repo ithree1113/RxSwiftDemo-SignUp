@@ -15,11 +15,11 @@ enum ValidationType {
 }
 
 class RxTextValidator {
-    private let input: Observable<String>
+    private let input: ControlProperty<String>
     private let type: ValidationType
     private let regex: NSPredicate
     
-    init(input: Observable<String>, type: ValidationType) {
+    init(input: ControlProperty<String>, type: ValidationType) {
         self.input = input
         self.type = type
         self.regex = NSPredicate(format:"SELF MATCHES %@", RegExPatternFactory().getRegExPattern(type))

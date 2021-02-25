@@ -28,6 +28,7 @@ class SignInViewController: UIViewController {
         let atf = UITextField()
         atf.placeholder = "Please enter your account"
         atf.borderStyle = .roundedRect
+        atf.layer.borderColor = UIColor.red.cgColor
         return atf
     }()
     private let passwordLabel: UILabel = {
@@ -40,12 +41,12 @@ class SignInViewController: UIViewController {
         let ptf = UITextField()
         ptf.placeholder = "Please enter your password"
         ptf.borderStyle = .roundedRect
+        ptf.layer.borderColor = UIColor.red.cgColor
         return ptf
     }()
     private let signInBtn: MainButton = {
         let sib = MainButton()
         sib.setTitle("Sign In", for: .normal)
-        sib.isValid.accept(false)
         return sib
     }()
     private let seperateLine: UIView = {
@@ -88,6 +89,26 @@ class SignInViewController: UIViewController {
 //MARK: - Binding
 private extension SignInViewController {
     func setupBinding() {
+        let isAccountValid = RxTextValidator(input: accountTextField.rx.text.orEmpty, type: .account).validate().skip(1)
+            .share(replay: 1, scope: .whileConnected)
+            
+        let isPasswordValid = RxTextValidator(input: passwordTextField.rx.text.orEmpty, type: .password).validate().skip(1)
+            .share(replay: 1, scope: .whileConnected)
+            
+        isAccountValid.map({ $0 ? 0 : 1 })
+            .subscribe(onNext: { [unowned self] width in
+                accountTextField.layer.borderWidth = width
+            }).disposed(by: disposeBag)
+
+        isPasswordValid.map({ $0 ? 0 : 1 })
+            .subscribe(onNext: { [unowned self] width in
+                passwordTextField.layer.borderWidth = width
+            }).disposed(by: disposeBag)
+        
+        Observable.combineLatest(isAccountValid, isPasswordValid) { $0 && $1 }
+            .subscribe(onNext: { isValid in
+                printLog(message: isValid)
+            }).disposed(by: disposeBag)
         
         if let coordinator = coordinator {
             signUpBtn.rx.tap
