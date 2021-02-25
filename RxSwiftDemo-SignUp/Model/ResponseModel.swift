@@ -7,7 +7,18 @@
 
 import Foundation
 
-struct BaseResponse: Codable {
+protocol APIResponseProtocol {
+    var status: String { get set }
+    func isSuccess() -> Bool
+}
+
+extension APIResponseProtocol {
+    func isSuccess() -> Bool {
+        return status == "0000"
+    }
+}
+
+struct BaseResponse: Codable, APIResponseProtocol {
     var status: String
     let reply: BaseReply
 }
@@ -16,7 +27,7 @@ struct BaseReply: Codable {
     let message: String
 }
 
-struct DataResponse<T: Codable>: Codable {
+struct DataResponse<T: Codable>: Codable, APIResponseProtocol {
     var status: String
     let reply: DataReply<T>
 }

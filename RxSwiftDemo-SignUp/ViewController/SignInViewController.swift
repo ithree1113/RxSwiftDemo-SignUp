@@ -91,6 +91,14 @@ class SignInViewController: UIViewController {
 //MARK: - Binding
 private extension SignInViewController {
     func setupBinding() {
+        accountTextField.rx.text.orEmpty
+            .bind(to: viewModel.input.account)
+            .disposed(by: disposeBag)
+        
+        passwordTextField.rx.text.orEmpty
+            .bind(to: viewModel.input.password)
+            .disposed(by: disposeBag)
+        
         let isAccountValid = RxTextValidator(input: accountTextField.rx.text.orEmpty, type: .account).validate().skip(1)
             .share(replay: 1, scope: .whileConnected)
             
@@ -107,10 +115,12 @@ private extension SignInViewController {
                 passwordTextField.layer.borderWidth = width
             }).disposed(by: disposeBag)
         
-        Observable.combineLatest(isAccountValid, isPasswordValid) { $0 && $1 }
-            .subscribe(onNext: { isValid in
-                printLog(message: isValid)
-            }).disposed(by: disposeBag)
+        signInBtn.rx.tap.flatMapLatest { _ in
+            Observable.combineLatest(isAccountValid, isPasswordValid) { $0 && $1 }
+        }.filter({ $0 })
+        .map({ _ in })
+        .bind(to: viewModel.input.signInAction)
+        .disposed(by: disposeBag)
         
         if let coordinator = coordinator {
             signUpBtn.rx.tap
